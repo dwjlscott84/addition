@@ -4,15 +4,28 @@
       <h2>Enter numbers in the first two fields below, then click the "Sum Numbers" button
         to see the total.
       </h2>
-      <input type="number" class="form-control" [(ngModel)]="firstNumber">
+      <input 
+        type="number" 
+        class="form-control" 
+        style="font-size: 16px;" 
+        [(ngModel)]="firstNumber">
       <span>&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</span>
-      <input type="number" class="form-control" [(ngModel)]="secondNumber">
+      <input 
+        type="number" 
+        class="form-control" 
+        style="font-size: 16px;" 
+        [(ngModel)]="secondNumber">
       <span>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</span>
-      <input type="number" readonly value="{{ sum }}"><br><br>
+      <input 
+        type="number" 
+        class="form-control" 
+        readonly 
+        style="font-size: 16px; background-color: rgb(242, 243, 243);" 
+        value="{{ sum }}">
+      <br><br>
       <button
         class="btn btn-primary"
         (click)="sumNumbers()">Sum Numbers</button>
-        &nbsp;&nbsp;&nbsp;
         <button
         class="btn btn-primary"
         (click)="resetNumbers()">Reset Numbers</button>
